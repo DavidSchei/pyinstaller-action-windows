@@ -1,10 +1,10 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 ENV DEBIAN_FRONTEND noninteractive
 
 ARG WINE_VERSION=winehq-stable
 ARG PYTHON_VERSION=3.8.5
-ARG PYINSTALLER_VERSION=4.0
+ARG PYINSTALLER_VERSION=5.3
 
 # we need wine for this all to work, so we'll use the PPA
 RUN set -x \
